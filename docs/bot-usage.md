@@ -166,7 +166,7 @@ located in `freqtrade/optimize/hyperopt_conf.py`.
 
 ```
 usage: main.py hyperopt [-h] [-i TICKER_INTERVAL] [--realistic-simulation]
-                        [--timerange TIMERANGE] [-e INT] [--use-mongodb]
+                        [--timerange TIMERANGE] [-e INT]
                         [-s {all,buy,roi,stoploss} [{all,buy,roi,stoploss} ...]]
 
 optional arguments:
@@ -176,11 +176,8 @@ optional arguments:
   --realistic-simulation
                         uses max_open_trades from config to simulate real
                         world limitations
-  --timerange TIMERANGE
-                        specify what timerange of data to use.
+  --timerange TIMERANGE specify what timerange of data to use.
   -e INT, --epochs INT  specify number of epochs (default: 100)
-  --use-mongodb         parallelize evaluations with mongodb (requires mongod
-                        in PATH)
   -s {all,buy,roi,stoploss} [{all,buy,roi,stoploss} ...], --spaces {all,buy,roi,stoploss} [{all,buy,roi,stoploss} ...]
                         Specify which parameters to hyperopt. Space separate
                         list. Default: all
