@@ -11,8 +11,6 @@ from freqtrade import misc, constants
 from freqtrade.exchange import get_ticker_history
 from freqtrade.arguments import TimeRange
 
-from user_data.hyperopt_conf import hyperopt_optimize_conf
-
 logger = logging.getLogger(__name__)
 
 
